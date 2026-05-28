@@ -5,7 +5,8 @@ function Home() {
     return (
         <div>
             <h1>Home Page</h1>
-            <Link to="/cars/new">Go to Add Car</Link>
+            <Link to="/cars/new">Go to Add Car</Link><br />
+            <Link to="/cars/delete">Go to Delete Car</Link>
             <h1>All cars:</h1>
             <CarList />
         </div>

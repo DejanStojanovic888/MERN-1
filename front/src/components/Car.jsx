@@ -1,8 +1,9 @@
-function Car() {
+function Car({ car, deleteCar }) {
     return (
-        <div>
-            <h1>Car Page</h1>
-        </div>
+        <article>
+            <h2>{car.name}</h2>
+            {deleteCar && <button onClick={() => deleteCar(car._id)}>Delete</button>}
+        </article>
     )
 }
 
